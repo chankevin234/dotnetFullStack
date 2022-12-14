@@ -1,0 +1,12 @@
+/home/kevin/Documents/dotnet_fullstack_project/dotnetFullStack/demo/Reactivities/Domain/bin/Debug/net7.0/Domain.deps.json
+/home/kevin/Documents/dotnet_fullstack_project/dotnetFullStack/demo/Reactivities/Domain/bin/Debug/net7.0/Domain.dll
+/home/kevin/Documents/dotnet_fullstack_project/dotnetFullStack/demo/Reactivities/Domain/bin/Debug/net7.0/Domain.pdb
+/home/kevin/Documents/dotnet_fullstack_project/dotnetFullStack/demo/Reactivities/Domain/obj/Debug/net7.0/Domain.csproj.AssemblyReference.cache
+/home/kevin/Documents/dotnet_fullstack_project/dotnetFullStack/demo/Reactivities/Domain/obj/Debug/net7.0/Domain.GeneratedMSBuildEditorConfig.editorconfig
+/home/kevin/Documents/dotnet_fullstack_project/dotnetFullStack/demo/Reactivities/Domain/obj/Debug/net7.0/Domain.AssemblyInfoInputs.cache
+/home/kevin/Documents/dotnet_fullstack_project/dotnetFullStack/demo/Reactivities/Domain/obj/Debug/net7.0/Domain.AssemblyInfo.cs
+/home/kevin/Documents/dotnet_fullstack_project/dotnetFullStack/demo/Reactivities/Domain/obj/Debug/net7.0/Domain.csproj.CoreCompileInputs.cache
+/home/kevin/Documents/dotnet_fullstack_project/dotnetFullStack/demo/Reactivities/Domain/obj/Debug/net7.0/Domain.dll
+/home/kevin/Documents/dotnet_fullstack_project/dotnetFullStack/demo/Reactivities/Domain/obj/Debug/net7.0/refint/Domain.dll
+/home/kevin/Documents/dotnet_fullstack_project/dotnetFullStack/demo/Reactivities/Domain/obj/Debug/net7.0/Domain.pdb
+/home/kevin/Documents/dotnet_fullstack_project/dotnetFullStack/demo/Reactivities/Domain/obj/Debug/net7.0/ref/Domain.dll

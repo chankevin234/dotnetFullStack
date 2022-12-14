@@ -1,0 +1,17 @@
+/home/kevin/Documents/dotnet_fullstack_project/dotnetFullStack/demo/Reactivities/Application/bin/Debug/net7.0/Application.deps.json
+/home/kevin/Documents/dotnet_fullstack_project/dotnetFullStack/demo/Reactivities/Application/bin/Debug/net7.0/Application.dll
+/home/kevin/Documents/dotnet_fullstack_project/dotnetFullStack/demo/Reactivities/Application/bin/Debug/net7.0/Application.pdb
+/home/kevin/Documents/dotnet_fullstack_project/dotnetFullStack/demo/Reactivities/Application/bin/Debug/net7.0/Domain.dll
+/home/kevin/Documents/dotnet_fullstack_project/dotnetFullStack/demo/Reactivities/Application/bin/Debug/net7.0/Persistence.dll
+/home/kevin/Documents/dotnet_fullstack_project/dotnetFullStack/demo/Reactivities/Application/bin/Debug/net7.0/Domain.pdb
+/home/kevin/Documents/dotnet_fullstack_project/dotnetFullStack/demo/Reactivities/Application/bin/Debug/net7.0/Persistence.pdb
+/home/kevin/Documents/dotnet_fullstack_project/dotnetFullStack/demo/Reactivities/Application/obj/Debug/net7.0/Application.csproj.AssemblyReference.cache
+/home/kevin/Documents/dotnet_fullstack_project/dotnetFullStack/demo/Reactivities/Application/obj/Debug/net7.0/Application.GeneratedMSBuildEditorConfig.editorconfig
+/home/kevin/Documents/dotnet_fullstack_project/dotnetFullStack/demo/Reactivities/Application/obj/Debug/net7.0/Application.AssemblyInfoInputs.cache
+/home/kevin/Documents/dotnet_fullstack_project/dotnetFullStack/demo/Reactivities/Application/obj/Debug/net7.0/Application.AssemblyInfo.cs
+/home/kevin/Documents/dotnet_fullstack_project/dotnetFullStack/demo/Reactivities/Application/obj/Debug/net7.0/Application.csproj.CoreCompileInputs.cache
+/home/kevin/Documents/dotnet_fullstack_project/dotnetFullStack/demo/Reactivities/Application/obj/Debug/net7.0/Application.csproj.CopyComplete
+/home/kevin/Documents/dotnet_fullstack_project/dotnetFullStack/demo/Reactivities/Application/obj/Debug/net7.0/Application.dll
+/home/kevin/Documents/dotnet_fullstack_project/dotnetFullStack/demo/Reactivities/Application/obj/Debug/net7.0/refint/Application.dll
+/home/kevin/Documents/dotnet_fullstack_project/dotnetFullStack/demo/Reactivities/Application/obj/Debug/net7.0/Application.pdb
+/home/kevin/Documents/dotnet_fullstack_project/dotnetFullStack/demo/Reactivities/Application/obj/Debug/net7.0/ref/Application.dll
