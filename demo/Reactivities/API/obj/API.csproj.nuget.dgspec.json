@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/kevin/Documents/dotnet_fullstack_project/dotnetFullStack/demo/Reactivities/API/API.csproj": {}
+    "/home/kevin/Documents/dotnetFullStack/demo/Reactivities/API/API.csproj": {}
   },
   "projects": {
-    "/home/kevin/Documents/dotnet_fullstack_project/dotnetFullStack/demo/Reactivities/API/API.csproj": {
+    "/home/kevin/Documents/dotnetFullStack/demo/Reactivities/API/API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/kevin/Documents/dotnet_fullstack_project/dotnetFullStack/demo/Reactivities/API/API.csproj",
+        "projectUniqueName": "/home/kevin/Documents/dotnetFullStack/demo/Reactivities/API/API.csproj",
         "projectName": "API",
-        "projectPath": "/home/kevin/Documents/dotnet_fullstack_project/dotnetFullStack/demo/Reactivities/API/API.csproj",
+        "projectPath": "/home/kevin/Documents/dotnetFullStack/demo/Reactivities/API/API.csproj",
         "packagesPath": "/home/kevin/.nuget/packages/",
-        "outputPath": "/home/kevin/Documents/dotnet_fullstack_project/dotnetFullStack/demo/Reactivities/API/obj/",
+        "outputPath": "/home/kevin/Documents/dotnetFullStack/demo/Reactivities/API/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/kevin/.nuget/NuGet/NuGet.Config"
@@ -26,8 +26,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/home/kevin/Documents/dotnet_fullstack_project/dotnetFullStack/demo/Reactivities/Application/Application.csproj": {
-                "projectPath": "/home/kevin/Documents/dotnet_fullstack_project/dotnetFullStack/demo/Reactivities/Application/Application.csproj"
+              "/home/kevin/Documents/dotnetFullStack/demo/Reactivities/Application/Application.csproj": {
+                "projectPath": "/home/kevin/Documents/dotnetFullStack/demo/Reactivities/Application/Application.csproj"
               }
             }
           }
@@ -43,6 +43,12 @@
           "targetAlias": "net7.0",
           "dependencies": {
             "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.1, )"
             },
@@ -74,14 +80,14 @@
         }
       }
     },
-    "/home/kevin/Documents/dotnet_fullstack_project/dotnetFullStack/demo/Reactivities/Application/Application.csproj": {
+    "/home/kevin/Documents/dotnetFullStack/demo/Reactivities/Application/Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/kevin/Documents/dotnet_fullstack_project/dotnetFullStack/demo/Reactivities/Application/Application.csproj",
+        "projectUniqueName": "/home/kevin/Documents/dotnetFullStack/demo/Reactivities/Application/Application.csproj",
         "projectName": "Application",
-        "projectPath": "/home/kevin/Documents/dotnet_fullstack_project/dotnetFullStack/demo/Reactivities/Application/Application.csproj",
+        "projectPath": "/home/kevin/Documents/dotnetFullStack/demo/Reactivities/Application/Application.csproj",
         "packagesPath": "/home/kevin/.nuget/packages/",
-        "outputPath": "/home/kevin/Documents/dotnet_fullstack_project/dotnetFullStack/demo/Reactivities/Application/obj/",
+        "outputPath": "/home/kevin/Documents/dotnetFullStack/demo/Reactivities/Application/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/kevin/.nuget/NuGet/NuGet.Config"
@@ -96,11 +102,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/home/kevin/Documents/dotnet_fullstack_project/dotnetFullStack/demo/Reactivities/Domain/Domain.csproj": {
-                "projectPath": "/home/kevin/Documents/dotnet_fullstack_project/dotnetFullStack/demo/Reactivities/Domain/Domain.csproj"
+              "/home/kevin/Documents/dotnetFullStack/demo/Reactivities/Domain/Domain.csproj": {
+                "projectPath": "/home/kevin/Documents/dotnetFullStack/demo/Reactivities/Domain/Domain.csproj"
               },
-              "/home/kevin/Documents/dotnet_fullstack_project/dotnetFullStack/demo/Reactivities/Persistence/Persistence.csproj": {
-                "projectPath": "/home/kevin/Documents/dotnet_fullstack_project/dotnetFullStack/demo/Reactivities/Persistence/Persistence.csproj"
+              "/home/kevin/Documents/dotnetFullStack/demo/Reactivities/Persistence/Persistence.csproj": {
+                "projectPath": "/home/kevin/Documents/dotnetFullStack/demo/Reactivities/Persistence/Persistence.csproj"
               }
             }
           }
@@ -134,14 +140,14 @@
         }
       }
     },
-    "/home/kevin/Documents/dotnet_fullstack_project/dotnetFullStack/demo/Reactivities/Domain/Domain.csproj": {
+    "/home/kevin/Documents/dotnetFullStack/demo/Reactivities/Domain/Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/kevin/Documents/dotnet_fullstack_project/dotnetFullStack/demo/Reactivities/Domain/Domain.csproj",
+        "projectUniqueName": "/home/kevin/Documents/dotnetFullStack/demo/Reactivities/Domain/Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "/home/kevin/Documents/dotnet_fullstack_project/dotnetFullStack/demo/Reactivities/Domain/Domain.csproj",
+        "projectPath": "/home/kevin/Documents/dotnetFullStack/demo/Reactivities/Domain/Domain.csproj",
         "packagesPath": "/home/kevin/.nuget/packages/",
-        "outputPath": "/home/kevin/Documents/dotnet_fullstack_project/dotnetFullStack/demo/Reactivities/Domain/obj/",
+        "outputPath": "/home/kevin/Documents/dotnetFullStack/demo/Reactivities/Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/kevin/.nuget/NuGet/NuGet.Config"
@@ -187,14 +193,14 @@
         }
       }
     },
-    "/home/kevin/Documents/dotnet_fullstack_project/dotnetFullStack/demo/Reactivities/Persistence/Persistence.csproj": {
+    "/home/kevin/Documents/dotnetFullStack/demo/Reactivities/Persistence/Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/kevin/Documents/dotnet_fullstack_project/dotnetFullStack/demo/Reactivities/Persistence/Persistence.csproj",
+        "projectUniqueName": "/home/kevin/Documents/dotnetFullStack/demo/Reactivities/Persistence/Persistence.csproj",
         "projectName": "Persistence",
-        "projectPath": "/home/kevin/Documents/dotnet_fullstack_project/dotnetFullStack/demo/Reactivities/Persistence/Persistence.csproj",
+        "projectPath": "/home/kevin/Documents/dotnetFullStack/demo/Reactivities/Persistence/Persistence.csproj",
         "packagesPath": "/home/kevin/.nuget/packages/",
-        "outputPath": "/home/kevin/Documents/dotnet_fullstack_project/dotnetFullStack/demo/Reactivities/Persistence/obj/",
+        "outputPath": "/home/kevin/Documents/dotnetFullStack/demo/Reactivities/Persistence/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/kevin/.nuget/NuGet/NuGet.Config"
@@ -209,8 +215,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/home/kevin/Documents/dotnet_fullstack_project/dotnetFullStack/demo/Reactivities/Domain/Domain.csproj": {
-                "projectPath": "/home/kevin/Documents/dotnet_fullstack_project/dotnetFullStack/demo/Reactivities/Domain/Domain.csproj"
+              "/home/kevin/Documents/dotnetFullStack/demo/Reactivities/Domain/Domain.csproj": {
+                "projectPath": "/home/kevin/Documents/dotnetFullStack/demo/Reactivities/Domain/Domain.csproj"
               }
             }
           }
@@ -224,6 +230,12 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/kevin/Documents/dotnet_fullstack_project/dotnetFullStack/demo/Reactivities/Domain/Domain.csproj",
+      "projectUniqueName": "/home/kevin/Documents/dotnetFullStack/demo/Reactivities/Domain/Domain.csproj",
       "projectName": "Domain",
-      "projectPath": "/home/kevin/Documents/dotnet_fullstack_project/dotnetFullStack/demo/Reactivities/Domain/Domain.csproj",
+      "projectPath": "/home/kevin/Documents/dotnetFullStack/demo/Reactivities/Domain/Domain.csproj",
       "packagesPath": "/home/kevin/.nuget/packages/",
-      "outputPath": "/home/kevin/Documents/dotnet_fullstack_project/dotnetFullStack/demo/Reactivities/Domain/obj/",
+      "outputPath": "/home/kevin/Documents/dotnetFullStack/demo/Reactivities/Domain/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/kevin/.nuget/NuGet/NuGet.Config"
