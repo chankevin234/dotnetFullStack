@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Application
-build_property.ProjectDir = /home/kevin/Documents/dotnet_fullstack_project/dotnetFullStack/demo/Reactivities/Application/
+build_property.ProjectDir = /home/kevin/Documents/dotnetFullStack/demo/Reactivities/Application/
