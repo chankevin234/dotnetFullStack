@@ -9,19 +9,32 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+//add the new db's context and connection
 builder.Services.AddDbContext<DataContext> (opt => 
 {
     opt.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection"));
 }); //this uses the connection string
 
+builder.Services.AddCors(opt => 
+{
+    opt.AddPolicy("CorsPolicy", policy => 
+    {
+        policy.AllowAnyMethod().AllowAnyHeader().WithOrigins("http://localhost:3000");
+    }); //policy to allow any http request to localhost 3000
+});
+
+
 var app = builder.Build(); //builds the app
 
-// Configure the HTTP request pipeline.
+// Configure the HTTP request pipeline. (middleware)
 if (app.Environment.IsDevelopment()) //applies middleware (controls api traffic in/out)
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseCors("CorsPolicy");
 
 app.UseAuthorization();
 
