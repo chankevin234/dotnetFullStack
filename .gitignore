@@ -4,6 +4,7 @@
 ## Get latest from https://github.com/github/gitignore/blob/main/VisualStudio.gitignore
 
 appsettings.json
+.~lock.Study Plan for Fullstack App.xlsx#
 
 # User-specific files
 *.rsuser
@@ -477,4 +478,3 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
-.~lock.Study Plan for Fullstack App.xlsx#
