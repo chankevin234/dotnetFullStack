@@ -107,12 +107,12 @@
 /home/kevin/Documents/dotnetFullStack/demo/Reactivities/API/bin/Debug/net7.0/runtimes/win-arm64/native/e_sqlite3.dll
 /home/kevin/Documents/dotnetFullStack/demo/Reactivities/API/bin/Debug/net7.0/runtimes/win-x64/native/e_sqlite3.dll
 /home/kevin/Documents/dotnetFullStack/demo/Reactivities/API/bin/Debug/net7.0/runtimes/win-x86/native/e_sqlite3.dll
-/home/kevin/Documents/dotnetFullStack/demo/Reactivities/API/bin/Debug/net7.0/Humanizer.dll
-/home/kevin/Documents/dotnetFullStack/demo/Reactivities/API/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Design.dll
-/home/kevin/Documents/dotnetFullStack/demo/Reactivities/API/bin/Debug/net7.0/Mono.TextTemplating.dll
-/home/kevin/Documents/dotnetFullStack/demo/Reactivities/API/bin/Debug/net7.0/System.CodeDom.dll
 /home/kevin/Documents/dotnetFullStack/demo/Reactivities/API/bin/Debug/net7.0/MediatR.dll
 /home/kevin/Documents/dotnetFullStack/demo/Reactivities/API/bin/Debug/net7.0/MediatR.Contracts.dll
 /home/kevin/Documents/dotnetFullStack/demo/Reactivities/API/bin/Debug/net7.0/MediatR.Extensions.Microsoft.DependencyInjection.dll
 /home/kevin/Documents/dotnetFullStack/demo/Reactivities/API/bin/Debug/net7.0/AutoMapper.dll
 /home/kevin/Documents/dotnetFullStack/demo/Reactivities/API/bin/Debug/net7.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+/home/kevin/Documents/dotnetFullStack/demo/Reactivities/API/bin/Debug/net7.0/Humanizer.dll
+/home/kevin/Documents/dotnetFullStack/demo/Reactivities/API/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Design.dll
+/home/kevin/Documents/dotnetFullStack/demo/Reactivities/API/bin/Debug/net7.0/Mono.TextTemplating.dll
+/home/kevin/Documents/dotnetFullStack/demo/Reactivities/API/bin/Debug/net7.0/System.CodeDom.dll
