@@ -13,7 +13,7 @@ namespace Application.Activities
 
         public class Handler : IRequestHandler<Query, Activity>
         {
-        public DataContext Context { get; }
+            public DataContext Context { get; }
             public Handler(DataContext context)
             {
                 this.Context = context;
