@@ -1,29 +1,25 @@
-import { Fragment, useEffect } from 'react';
+import { Fragment } from 'react';
 import { Container } from 'semantic-ui-react';
 import NavBar from './NavBar';
-import ActivityDashboard from '../../features/activities/dashboard/ActivityDashboard';
-import LoadingComponent from './LoadingComponent';
-import { useStore } from '../stores/store';
 import { observer } from 'mobx-react-lite';
+import { Outlet, useLocation } from 'react-router-dom';
+import HomePage from '../../features/home/HomePage';
 
 function App() {
-  // monitors changes in state! (will be moved to centralized store)
-  const {activityStore} = useStore();
-
-  useEffect(() => {
-    activityStore.loadActivities(); 
-  }, [activityStore])
-
-  //check if the screen is in "loading" state
-  if (activityStore.loadingInitial) return <LoadingComponent content='Loading App' />
-
-  // 1 Element per react component (NavBar and Container = 2 elements at same level)
+  const location = useLocation();
   return (
-    <Fragment> 
-      <NavBar />
-      <Container style={{marginTop: '7em'}}>
-        <ActivityDashboard />
-      </Container>
+    // 1 Element per react component (NavBar and Container = 2 elements at same level)
+    /* location.pathname checks whether the address is '/' to show the homepage, 
+    otherwise, it shows the navbar and outlet routes */
+    <Fragment>
+      {location.pathname === '/' ? <HomePage /> : (
+        <Fragment>
+          <NavBar />
+            <Container style={{marginTop: '7em'}}>
+              <Outlet />
+            </Container>
+        </Fragment>
+      )}   
     </Fragment>
   );
 }

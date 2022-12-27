@@ -1,15 +1,21 @@
-import React from "react";
+import { useEffect } from "react";
 import { Grid } from "semantic-ui-react";
 import ActivityList from "./ActivityList";
-import ActivityDetails from "../details/ActivityDetails";
-import ActivityForm from "../form/ActivityForm";
 import { useStore } from "../../../app/stores/store";
 import { observer } from "mobx-react-lite";
+import LoadingComponent from "../../../app/layout/LoadingComponent";
 
 export default observer(function ActivityDashboard() {
-
+    // monitors changes in state!
     const {activityStore} = useStore();
-    const {selectedActivity, editMode} = activityStore;
+    const {loadActivities, activityRegistry} = activityStore;
+    
+    useEffect(() => {
+        if (activityRegistry.size <= 1) loadActivities(); // if there is stuff in the actReg, don't need to load from the api
+    }, [loadActivities, activityRegistry.size]) // 2 dependency in square brackets
+
+    //check if the screen is in "loading" state
+    if (activityStore.loadingInitial) return <LoadingComponent content='Loading App' />
     
     return (
         <Grid>
@@ -17,10 +23,7 @@ export default observer(function ActivityDashboard() {
                 <ActivityList />
             </Grid.Column>
             <Grid.Column width='6'>
-                {selectedActivity && !editMode &&
-                <ActivityDetails />}
-                {editMode &&
-                <ActivityForm />}
+                <h2>Activity Filter</h2>
             </Grid.Column>
         </Grid>
     )
