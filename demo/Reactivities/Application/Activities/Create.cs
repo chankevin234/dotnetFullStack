@@ -8,7 +8,7 @@ namespace Application.Activities
     {
         public class Command : IRequest
         {
-            public Activity Activiity { get; set; }
+            public Activity Activity { get; set; }
         }
 
         public class Handler : IRequestHandler<Command>
@@ -21,7 +21,7 @@ namespace Application.Activities
             }
             public async Task<Unit> Handle(Command request, CancellationToken cancellationToken)
             {
-                this.context.Activities.Add(request.Activiity);
+                this.context.Activities.Add(request.Activity);
 
                 await this.context.SaveChangesAsync(); 
 

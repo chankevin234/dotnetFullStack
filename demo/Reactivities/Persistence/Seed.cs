@@ -7,7 +7,8 @@ namespace Persistence
         public static async Task SeedData(DataContext context)
         {
             if (context.Activities.Any()) return; // do activities exist in the db?
-            
+
+            // your DEFAULTLY existing objects in your database            
             var activities = new List<Activity>
             {
                 new Activity
