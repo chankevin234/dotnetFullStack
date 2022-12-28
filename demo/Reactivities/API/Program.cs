@@ -4,8 +4,7 @@ using Persistence;
 
 var builder = WebApplication.CreateBuilder(args); //creates kestrel server
 
-// Add services to the container.
-
+// Add services to the container
 builder.Services.AddControllers();
 // Services have now been added to "Extensions" class
 builder.Services.AddApplicationServices(builder.Configuration);

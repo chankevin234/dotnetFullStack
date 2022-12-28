@@ -14,9 +14,20 @@ export default class ActivityStore {
         makeAutoObservable(this) //auto recognizes the functions and properties in the class and makes them observable
     }
 
-    get activitiesByDate() {
+    get activitiesByDate() { //this 
         return Array.from(this.activityRegistry.values()).sort((a, b) => 
             Date.parse(a.date) - Date.parse(b.date));
+    }
+
+    get groupedActivities() {
+        return Object.entries(
+            this.activitiesByDate.reduce((activities, activity) => {
+                const date = activity.date; // the key for each act obj
+                // checks if the activity obj at the date has a match in the MAP
+                activities[date] = activities[date] ? [...activities[date], activity] : [activity];
+                return activities; //returns array of activities matching this date 
+            }, {} as {[key: string]: Activity[]})
+        )
     }
 
     //loads ALL the activities in your registry

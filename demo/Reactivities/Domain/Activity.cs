@@ -1,4 +1,4 @@
-//an Entity/Model (thing you will store in a DB)
+//an Entity/Model (thing/structure of what you will store in a DB -- template for your db)
 
 namespace Domain // folder name
 {
