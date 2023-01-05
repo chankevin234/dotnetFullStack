@@ -1,4 +1,5 @@
 using API.Extensions;
+using API.Middleware;
 using Microsoft.EntityFrameworkCore;
 using Persistence;
 
@@ -11,14 +12,16 @@ builder.Services.AddApplicationServices(builder.Configuration);
 
 var app = builder.Build(); //builds the app
 
-// Configure the HTTP request pipeline. (middleware)
+/* Configure the HTTP request pipeline. (TOP of MIDDLEWARE Tree)
+MIDDLEWARE is assembled into an app pipeline to handle requests and response (decides if it will pass request to next component in pipeline) */
+app.UseMiddleware<ExceptionMiddleware>();
+
 if (app.Environment.IsDevelopment()) //applies middleware (controls api traffic in/out)
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
-app.UseCors("CorsPolicy");
+app.UseCors("CorsPolicy"); // adds CORS middleware HEADER to allow cross domain requests 
 
 app.UseAuthorization();
 
