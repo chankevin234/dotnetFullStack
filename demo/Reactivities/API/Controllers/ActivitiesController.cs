@@ -1,5 +1,6 @@
 using Application.Activities;
 using Domain;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers
@@ -19,6 +20,7 @@ namespace API.Controllers
             return HandleResult(await Mediator.Send(new List.Query())); //"List" is a .cs file from Application/Activities
         }
 
+        // [Authorize] // this means you are using the authentication service (not necessary now)
         [HttpGet("{id}")] //api/activities/<activity id>
         public async Task<ActionResult<Activity>> GetActivity(Guid id) 
         {

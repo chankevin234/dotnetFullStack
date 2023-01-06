@@ -1,14 +1,30 @@
 using Domain;
+using Microsoft.AspNetCore.Identity;
 
 namespace Persistence
 {
     public class Seed
     {
-        public static async Task SeedData(DataContext context)
+        public static async Task SeedData(DataContext context, UserManager<AppUser> userManager)
         {
+            if (!userManager.Users.Any()) //checks whether users exist.. if not, create a list of them
+            {
+                var users = new List<AppUser>
+                {
+                    new AppUser {DisplayName = "Bob", UserName = "bob", Email = "bob@test.com"},
+                    new AppUser {DisplayName = "Tom", UserName = "tom", Email = "tom@test.com"},
+                    new AppUser {DisplayName = "Jane", UserName = "jane", Email = "jane@test.com"},
+                };
+
+                foreach (var user in users) 
+                {
+                    await userManager.CreateAsync(user, "Pa$$w0rd"); //add individual users in a foreach loop
+                }
+            }
+
             if (context.Activities.Any()) return; // do activities exist in the db?
 
-            // your DEFAULTLY existing objects in your database            
+            // your DEFAULTL existing objects in your database            
             var activities = new List<Activity>
             {
                 new Activity

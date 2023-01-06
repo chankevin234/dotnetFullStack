@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "Thes00GWU69rPMfDsHmS4UbAqnspmQhavHAYNkLLW0iv+WkghwB/ohQSc4m32I6o/md9Po39VQl9Gh7Buy3AYw==",
+  "dgSpecHash": "TrG3yQCzhSgkWWad01vfGct3OjXODLSCz+I9mrEucrHLVzxD56FkjzRhzjTUnyoJAC9PlWaIDcH/ZWBtr5yBfw==",
   "success": true,
   "projectFilePath": "/home/kevin/Documents/dotnetFullStack/demo/Reactivities/Persistence/Persistence.csproj",
   "expectedPackageFiles": [
+    "/home/kevin/.nuget/packages/microsoft.aspnetcore.cryptography.internal/7.0.1/microsoft.aspnetcore.cryptography.internal.7.0.1.nupkg.sha512",
+    "/home/kevin/.nuget/packages/microsoft.aspnetcore.cryptography.keyderivation/7.0.1/microsoft.aspnetcore.cryptography.keyderivation.7.0.1.nupkg.sha512",
+    "/home/kevin/.nuget/packages/microsoft.aspnetcore.identity.entityframeworkcore/7.0.1/microsoft.aspnetcore.identity.entityframeworkcore.7.0.1.nupkg.sha512",
     "/home/kevin/.nuget/packages/microsoft.data.sqlite.core/7.0.1/microsoft.data.sqlite.core.7.0.1.nupkg.sha512",
     "/home/kevin/.nuget/packages/microsoft.entityframeworkcore/7.0.1/microsoft.entityframeworkcore.7.0.1.nupkg.sha512",
     "/home/kevin/.nuget/packages/microsoft.entityframeworkcore.abstractions/7.0.1/microsoft.entityframeworkcore.abstractions.7.0.1.nupkg.sha512",
@@ -17,6 +20,8 @@
     "/home/kevin/.nuget/packages/microsoft.extensions.dependencyinjection/7.0.0/microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
     "/home/kevin/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/7.0.0/microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
     "/home/kevin/.nuget/packages/microsoft.extensions.dependencymodel/7.0.0/microsoft.extensions.dependencymodel.7.0.0.nupkg.sha512",
+    "/home/kevin/.nuget/packages/microsoft.extensions.identity.core/7.0.1/microsoft.extensions.identity.core.7.0.1.nupkg.sha512",
+    "/home/kevin/.nuget/packages/microsoft.extensions.identity.stores/7.0.1/microsoft.extensions.identity.stores.7.0.1.nupkg.sha512",
     "/home/kevin/.nuget/packages/microsoft.extensions.logging/7.0.0/microsoft.extensions.logging.7.0.0.nupkg.sha512",
     "/home/kevin/.nuget/packages/microsoft.extensions.logging.abstractions/7.0.0/microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
     "/home/kevin/.nuget/packages/microsoft.extensions.options/7.0.0/microsoft.extensions.options.7.0.0.nupkg.sha512",
