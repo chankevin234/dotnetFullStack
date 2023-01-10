@@ -16,7 +16,7 @@ export default observer(function ActivityDashboard() {
     }, [loadActivities, activityRegistry.size]) // 2 dependency in square brackets
 
     //check if the screen is in "loading" state
-    if (activityStore.loadingInitial) return <LoadingComponent content='Loading App' />
+    if (activityStore.loadingInitial) return <LoadingComponent content='Loading Activities' />
     
     return (
         <Grid>

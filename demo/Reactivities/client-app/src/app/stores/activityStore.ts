@@ -1,3 +1,5 @@
+// this uses MOBX Store
+
 import { makeAutoObservable, runInAction } from "mobx";
 import agent from "../api/agent";
 import { Activity } from "../models/activity";

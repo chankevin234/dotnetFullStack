@@ -44,20 +44,23 @@ namespace API.Controllers
             return Unauthorized(); //if pass don't match
         }
 
-        [Authorize]
+        // [Authorize]
+        [AllowAnonymous] 
         [HttpPost("register")] //register endpoint
         public async Task<ActionResult<UserDto>> Register(RegisterDto registerDto)
         {
-            //check if username already exists
-            if (await this.userManager.Users.AnyAsync(x => x.UserName == registerDto.Username))
-            {
-                return BadRequest("Username is already taken");
-            }
-
             //check if email already exists
             if (await this.userManager.Users.AnyAsync(x => x.Email == registerDto.Email))
             {
-                return BadRequest("Email is already taken");
+                ModelState.AddModelError("email", "Email Taken");
+                return ValidationProblem();
+            }
+
+            //check if username already exists
+            if (await this.userManager.Users.AnyAsync(x => x.UserName == registerDto.Username))
+            {
+                ModelState.AddModelError("username", "Username Taken");
+                return ValidationProblem();
             }
 
             var user = new AppUser

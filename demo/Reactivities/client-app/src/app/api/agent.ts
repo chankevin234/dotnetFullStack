@@ -1,6 +1,8 @@
 import axios, { AxiosError, AxiosResponse } from "axios";
+import { request } from "http";
 import { toast } from "react-toastify";
 import { Activity } from "../models/activity";
+import { User, UserFormValues } from "../models/user";
 import { router } from "../router/Routes";
 import { store } from "../stores/store";
 
@@ -12,6 +14,18 @@ const sleep = (delay: number) => { //variable for "sleeping", will be passed to 
 
 axios.defaults.baseURL = 'http://localhost:5000/api';
 
+const responseBody = <T> (response: AxiosResponse<T>) => response.data;
+
+axios.interceptors.request.use(config => {
+    const token = store.commonStore.token; //get the token from commonStore
+    if (token && config.headers) {
+        config.headers.Authorization = `Bearer ${token}`; // this adds the token to the authorization header so we can auth
+    }
+    return config;
+    
+})
+
+// This interceptor is used for RESPONSES back to server
 axios.interceptors.response.use(async response => { // AXIOS INTERCEPTORS
         await sleep(1000); // loading screen
         return response;
@@ -54,8 +68,6 @@ axios.interceptors.response.use(async response => { // AXIOS INTERCEPTORS
     return Promise.reject(error);
 })
 
-const responseBody = <T> (response: AxiosResponse<T>) => response.data;
-
 const requests = {
     get: <T> (url: string) => axios.get<T>(url).then(responseBody), 
     post: <T> (url: string, body: {}) => axios.post<T>(url, body).then(responseBody), 
@@ -73,8 +85,16 @@ const Activities = {
     delete: (id: string) => axios.delete<void>(`/activities/${id}`)
 }
 
-const agent = {
-    Activities
+const Account = {
+    current: () => requests.get<User>('/account'),
+    login: (user: UserFormValues) => requests.post<User>('/account/login', user), //passes 'user' upto API
+    register: (user: UserFormValues) => requests.post<User>('/account/register', user)
+
 }
 
-export default agent;
+const agent = {
+    Activities,
+    Account
+}
+
+export default agent; //exported to other tsx files!

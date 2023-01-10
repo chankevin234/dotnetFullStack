@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers
 {
+    [AllowAnonymous] // placed here for now to allow us to get our activities while setting up client login
     public class ActivitiesController : BaseApiController
     {
         // private readonly IMediator mediator;

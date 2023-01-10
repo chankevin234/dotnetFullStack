@@ -1,14 +1,15 @@
 import React, { useState } from 'react';
 import {Button, Header, Segment} from "semantic-ui-react";
 import axios from 'axios';
-import ValidationError from './ValidationError';
+import ValidationErrors from './ValidationErrors';
 
 export default function TestErrors() {
     const baseUrl = 'http://localhost:5000/api/';
     const [errors, setErrors] = useState(null);
 
     function handleNotFound() {
-        axios.get(baseUrl + 'buggy/not-found').catch(err => console.log(err.response));
+        //AXIOS is an INTERCEPTOR for http results/promise received when something happens (Ex. 'not found' error code)
+        axios.get(baseUrl + 'buggy/not-found').catch(err => console.log(err.response)); 
     }
 
     function handleBadRequest() {
@@ -44,7 +45,7 @@ export default function TestErrors() {
                     <Button onClick={handleBadGuid} content='Bad Guid' basic primary />
                 </Button.Group>
             </Segment>
-            {errors && <ValidationError errors={errors} />}
+            {errors && <ValidationErrors errors={errors} />}
         </>
     )
 }
